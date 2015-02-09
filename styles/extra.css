@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: linen !important;
+}
+.top-bar {
+	background: linear-gradient(#0C6,#063) !important;
+	background: -webkit-linear-gradient(#0C6,#063) !important;
+}
+.contain-to-grid {
+	background:#063 !important;/*change to linear gradient?*/
+}
+.top-bar.expanded .title-area {
+      background: #063 !important; 
+}
+
+.top-bar .name h1 a {
+	font-family: 'Alfa Slab One', cursive !important;
+	color: linen !important;
+	font-size: 1rem !important;
+	font-weight: normal !important;
+}
+
+.top-bar-section ul li{
+	background: #063 !important;
+	
+	/*font-family: 'Alfa Slab One', cursive !important;*/
+}
+
+.top-bar-section li a:not(.button):hover {
+    background: #0C6 !important;
+}
+
+.top-bar-section li a:not(.button) {
+	 background: linear-gradient(#0C6,#063) !important;
+	 background: -webkit-linear-gradient(#0C6,#063) !important;
+	 color: linen !important;
+	 /*font-family: 'Alfa Slab One', cursive !important;*/
+
+}
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+	background:#063 !important;
+}
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button):hover {
+	background:#0C6 !important;
+}
+.dropdown li label {
+	background:#063 !important;
+	color:linen !important;
+}
+
+h4 { 
+font-family: 'Alfa Slab One', cursive !important;
+}
+
+button, .button {
+	background:#063 !important;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+    background-color: #0C6 !important; }
+	
+.row.full-orbit {
+min-width: 100%;
+height: auto;
+margin: 0;
+padding: 0; }
+
+.google-map {
+position: relative;
+padding-bottom: 75%;
+height: 0;
+overflow: hidden;
+}
+.google-map iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100% !important;
+height: 100% !important;
+}
+
+/*footer {
+background: linear-gradient(#063,#0C6);
+color: linen;
+font-family: 'Alfa Slab One', cursive !important;
+min-width: 100%;
+max-width: none; 
+margin: 0;
+padding: 0; }*/
+	

@@ -1,0 +1,244 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+	<title>Park Map</title>
+
+    <meta name="description" content="Northern Michigan's " />
+    <meta name="author" content="El Rancho Alanson RV Resort" />
+    <meta name="copyright" content="El Rancho Alanson RV Resort Copyright (c) 2015" />
+
+    <script src="scripts/vendor/modernizr.js"></script>
+    
+  <link href="styles/foundation.css" rel="stylesheet" type="text/css">
+  <link href="styles/extra.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+
+  </head>
+  
+  <body>
+  
+    
+<!-- Navigation -->
+	<div class="fixed">
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name">
+        <h1>
+          <a href="index.html">
+            EL RANCHO ALANSON RV RESORT
+          </a>
+        </h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+    </ul>
+ 
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="divider"></li>
+        <li class="has-dropdown">
+          <a href="#">Main Item 1</a>
+          <ul class="dropdown">
+            <li><label>Section Name</label></li>
+            <li class="has-dropdown">
+              <a href="#" class="">Has Dropdown, Level 1</a>
+              <ul class="dropdown">
+                <li><a href="#">Dropdown Options</a></li>
+                <li><a href="#">Dropdown Options</a></li>
+                <li><a href="#">Level 2</a></li>
+                <li><a href="#">Subdropdown Option</a></li>
+                <li><a href="#">Subdropdown Option</a></li>
+                <li><a href="#">Subdropdown Option</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li class="divider"></li>
+            <li><label>Section Name</label></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li class="divider"></li>
+            <li><a href="#">See all &rarr;</a></li>
+          </ul>
+        </li>
+        <li class="divider"></li>
+		<li class="has-dropdown">
+		<a href="">Things to do</a>
+			<ul class="dropdown">
+        <li><a href="calendar.html">Event Calendar</a></li>
+		<li><a href="#">Local Attractions</a></li>
+		<li><a href="#">Local Restaurants</a></li>
+		</ul>
+        <li class="divider"></li>
+		
+        <li class="has-dropdown">
+          <a href="">About Us</a>
+          <ul class="dropdown">
+            <li><a href="park_map.html">Park Map</a></li>
+			<li><a href="location.html">Our Location</a></li>
+            <li><a href="weather.html">Current Weather</a></li>
+            <li><a href="#" data-reveal-id="contact_form">Contact Us</a></li>
+            <li class="divider"></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </nav>
+</div>
+  <!-- End Top Bar -->
+	
+	<!-- Park Map -->
+ <div class="row">
+	<div class="large-12 columns"><br><br>
+		<img src="images/park_map.png">
+	</div>
+ </div>
+ <br>
+	<!-- End Map -->
+	
+<!-- End Content -->
+	
+	<!-- Contact Form -->
+	
+	            <div class="reveal-modal small" id="contact_form" data-reveal>
+          
+          <div class="section-container tabs" data-section>
+          
+          <section class="section">
+          		
+                <h5 class="title">Drop us a line!</h5>
+          
+          <div class="content">
+            
+            <form name="contact_form" action="http://formspree.io/aglhenning@live.com" method="post">
+              
+              <div class="row collapse">
+                
+                <div class="large-2 columns">
+                
+                  <label class="inline">Name</label>
+                  
+                </div>
+                
+                <div class="large-10 columns">
+                
+                  <input type="text" id="Name" name="Name" title="Please enter your name." placeholder="Your Name" required pattern="[a-zA-Z|\s|\.|-]+">
+                  
+                             
+                </div>
+              </div>
+              
+              <div class="row collapse">
+                
+                <div class="large-2 columns">
+                
+                  <label class="inline">Phone</label>
+                </div>
+                
+                <div class="large-10 columns">
+                
+                  <input type="text" id="Phone" name="Phone" title="Please enter your phone number." placeholder="(555) 555-5555" required pattern="[(]?([2-9]{1}\d{2})[-|)|\s]?[-|\s]?([2-9]{1}\d{2})[-|\s]?(\d{4})$">
+                                    
+                </div>
+              </div>
+              
+              <div class="row collapse">
+                
+                <div class="large-2 columns">
+                
+                  <label class="inline">Email</label>
+                  
+                </div>
+                
+                <div class="large-10 columns">
+                
+                  <input type="email" id="Email"  name="Email" placeholder="you@email.com" title="Please enter your email address." required pattern="^(\w[-._\w]*\w@\w[-._\w]*\w\.\w{2,3})+$">
+                  
+                                    
+                </div>
+              </div>
+             
+			 <label>How should we contact you? </label><label><input type="radio" value="Phone" name="Contact Preference" title="Please choose one." required> Phone </label><label><input type="radio" value="Email" name="Contact Preference" title="Please choose one." required> Email </label>
+                            
+              <label>How may we help?</label><br>
+              
+              <textarea id="Message" name="Message" rows="4" required></textarea><br>
+              
+              <button type="submit" class="radius button left">Submit</button> 
+              
+			  <button type="reset" class="radius button right">Reset</button>
+              
+              <input type="hidden" name="_subject" value="New Form Submission">
+              
+              <input type="text" name="_gotcha" style="display:none">
+              
+             <input type="hidden" name="_next" value="//sneakycool.github.io/thank_you.html">
+            
+            </form>
+           
+             </div>
+        </section>
+     </div>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>
+<!-- End Contact Form -->
+	
+    <!-- Footer -->
+ 
+      <footer class="row">
+        
+        <div class="large-12 columns">
+            
+            <div class="row">
+			<hr>
+             <div class="large-6 columns">
+                  <p>&copy; 2015 El Rancho Alanson RV Resort. All Rights Reserved.</p>
+              </div>
+ 
+              <div class="large-6 small-12 columns">
+                  <ul class="inline-list right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                  </ul>
+              </div>
+ 
+            </div>
+        </div>
+      </footer>
+ 
+    <!-- End Footer -->
+ 	
+ <script>
+  document.write('<script src=scripts/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+ </script>
+ 
+    <script src="scripts/vendor/jquery.js"></script>
+	<script src="scripts/foundation/foundation.js"></script>
+    <script src="scripts/foundation/foundation.topbar.js"></script>
+    <script src="scripts/foundation/foundation.reveal.js"></script>
+    <script src="scripts/foundation/foundation.orbit.js"></script>
+	<script>
+      $(document).foundation();
+	  var doc = document.documentElement;
+      doc.setAttribute('data-useragent', navigator.userAgent);
+    </script>
+    
+<script src="scripts/extras/jquery.maskedinput.min.js" type="text/javascript"></script>
+
+<script>jQuery(function($){
+   $("#Phone").mask("(999) 999-9999");
+});</script>
+
+
+</body>
+</html>
