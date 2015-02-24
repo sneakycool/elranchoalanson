@@ -405,7 +405,7 @@
     version: '5.5.0',
 
     settings: {
-      animation: 'slide',
+      animation: 'fade',
       timer_speed: 5000,
       pause_on_hover: false,
       resume_on_mouseout: false,

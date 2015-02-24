@@ -71,11 +71,6 @@ button, .button {
 	margin: 1rem;
 }
 
-img {
-max-width: 75%;
-margin-left: 1rem;
-margin-top: 0;
-}
 
 @media only screen {
     .calendar .small-1 {
