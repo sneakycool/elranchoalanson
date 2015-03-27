@@ -116,91 +116,7 @@
 	<!-- End Map -->
 	
 <!-- End Content -->
-	
-	<!-- Contact Form -->
-	
-	            <div class="reveal-modal small" id="contact_form" data-reveal>
-          
-          <div class="section-container tabs" data-section>
-          
-          <section class="section">
-          		
-                <h5 class="title">Drop us a line!</h5>
-          
-          <div class="content">
-            
-            <form name="contact_form" action="http://formspree.io/aglhenning@live.com" method="post">
-              
-              <div class="row collapse">
-                
-                <div class="large-2 columns">
-                
-                  <label class="inline">Name</label>
-                  
-                </div>
-                
-                <div class="large-10 columns">
-                
-                  <input type="text" id="Name" name="Name" title="Please enter your name." placeholder="Your Name" required pattern="[a-zA-Z|\s|\.|-]+">
-                  
-                             
-                </div>
-              </div>
-              
-              <div class="row collapse">
-                
-                <div class="large-2 columns">
-                
-                  <label class="inline">Phone</label>
-                </div>
-                
-                <div class="large-10 columns">
-                
-                  <input type="text" id="Phone" name="Phone" title="Please enter your phone number." placeholder="(555) 555-5555" required pattern="[(]?([2-9]{1}\d{2})[-|)|\s]?[-|\s]?([2-9]{1}\d{2})[-|\s]?(\d{4})$">
-                                    
-                </div>
-              </div>
-              
-              <div class="row collapse">
-                
-                <div class="large-2 columns">
-                
-                  <label class="inline">Email</label>
-                  
-                </div>
-                
-                <div class="large-10 columns">
-                
-                  <input type="email" id="Email"  name="Email" placeholder="you@email.com" title="Please enter your email address." required pattern="^(\w[-._\w]*\w@\w[-._\w]*\w\.\w{2,3})+$">
-                  
-                                    
-                </div>
-              </div>
-             
-			 <label>How should we contact you? </label><label><input type="radio" value="Phone" name="Contact Preference" title="Please choose one." required> Phone </label><label><input type="radio" value="Email" name="Contact Preference" title="Please choose one." required> Email </label>
-                            
-              <label>How may we help?</label><br>
-              
-              <textarea id="Message" name="Message" rows="4" required></textarea><br>
-              
-              <button type="submit" class="radius button left">Submit</button> 
-              
-			  <button type="reset" class="radius button right">Reset</button>
-              
-              <input type="hidden" name="_subject" value="New Form Submission">
-              
-              <input type="text" name="_gotcha" style="display:none">
-              
-             <input type="hidden" name="_next" value="//sneakycool.github.io/elranchoalanson/thank_you.html">
-            
-            </form>
-           
-             </div>
-        </section>
-     </div>
-            <a class="close-reveal-modal">&#215;</a>
-            </div>
-<!-- End Contact Form -->
+
 	
     <!-- Footer -->
  
@@ -240,17 +156,12 @@
     <script src="scripts/foundation/foundation.topbar.js"></script>
     <script src="scripts/foundation/foundation.reveal.js"></script>
     <script src="scripts/foundation/foundation.orbit.js"></script>
+	<script src="scripts/extras/sticky_footer.js"></script>
 	<script>
       $(document).foundation();
 	  var doc = document.documentElement;
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
-    
-<script src="scripts/extras/jquery.maskedinput.min.js" type="text/javascript"></script>
-
-<script>jQuery(function($){
-   $("#Phone").mask("(999) 999-9999");
-});</script>
 
 
 </body>
