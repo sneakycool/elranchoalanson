@@ -431,7 +431,7 @@
       caption_class: 'orbit-caption',
       active_slide_class: 'active',
       orbit_transition_class: 'orbit-transitioning',
-      bullets: true,
+      bullets: false,
       circular: true,
       timer: true,
       variable_height: false,
