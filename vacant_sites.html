@@ -193,16 +193,12 @@
                 <img src="http://placehold.it/250x250&text=Image Coming Soon!"/>
                 <h6 class="panel"><b>Lot:</b> 131<br><b>Contact:</b> El Rancho Office<br><b>Phone:</b> 231.548.2600<br><a href="mailto:rentals@elranchoalanson.com?Subject=Vacant%20Site%20131" target="_top">rentals@elranchoalanson.com</a><br></h6>
             </div>			  
-			
-			<div class="large-3 small-6 columns">
-               </div>      
-            <div class="large-3 small-6 columns">
-               </div>
-       
+			<div class="large-3 small-6 columns"></div>
+			<div class="large-3 small-6 columns"></div>     
             </div>
           </div>
         </div>
-       
+       		
 
         <div class="row">
           <div class="large-12 columns">
@@ -221,7 +217,7 @@
                   </h5>
        
                 <div class="show-for-small" align="center">
-                  <a href="#" class="small radius button">Call To Action!</a><br>
+                  <a class="small radius button" onclick="rates()">2015 Rental Rates</a><br>
        
                   <a href="#" class="small radius button">Call To Action!</a>
                 </div>
@@ -239,8 +235,8 @@
        
                 <h4>Get In Touch!</h4><hr/>
        
-                <a class="large button expand" href="#">
-                  Call To Action!
+                <a class="large button expand" onclick="rates()">
+                  2015 Rental Rates
                 </a>
        
                 <a class="large button expand" href="#">
@@ -255,8 +251,6 @@
             </div>
           </div>
         </div>
-       
-           
        
         <!-- Footer -->
  
@@ -294,8 +288,6 @@
     <script src="scripts/vendor/jquery.js"></script>
 	<script src="scripts/foundation/foundation.js"></script>
     <script src="scripts/foundation/foundation.topbar.js"></script>
-    <script src="scripts/foundation/foundation.reveal.js"></script>
-    <script src="scripts/foundation/foundation.orbit.js"></script>
 	<script src="scripts/extras/sticky_footer.js"></script>
 	<script>
       $(document).foundation();
@@ -306,6 +298,12 @@
 <script>
 function r_r() {
     window.open("r_r.html", "_blank", "toolbar=no, scrollbars=yes, resizable=no, titlebar=no, location=no, top=0, left=500, width=600, height=800");
+}
+</script>
+
+<script>
+function rates() {
+	window.open("2015_rental_rates.html", "_blank", "toolbar=no, scrollbars=yes, resizable=no, titlebar=no, location=no, top=10, left=600, width=400, height=725");
 }
 </script>
 

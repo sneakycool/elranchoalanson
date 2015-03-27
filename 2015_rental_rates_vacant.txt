@@ -1,0 +1,31 @@
+<div class="row">
+			<div class="large-6 columns panel">
+			<h5 class="title"><b>2015 Rent Schedule for Vacant Sites</b></h5>
+		
+           
+DAILY:
+
+Spring/Fall  $30.00
+Summer $35.00
+
+MONTHLY:
+
+June $750.00*
+July $750.00*
+August $50.00*
+June, July and August $1,800.00*
+
+SEASONAL:
+
+May 1st November 1st $2,250.00*
+
+
+ All sites are on cement with water, sewer
+         and electric.
+
+*There will be an additional charge
+   for all monthly and seasonal rent.
+   Meters will be read and renters
+   will be charged $.15 per kwh.
+</div>
+</div>

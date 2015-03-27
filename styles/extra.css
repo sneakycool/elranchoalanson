@@ -112,7 +112,9 @@ button:hover, button:focus, .button:hover, .button:focus {
 	width: 100% !important;
 	height: 100% !important;
 }
-
+.rent th{
+text-align: center;
+}
 @media print{
   html, body{ background-color:#FFFFFF; background-image:none; color:#000000; height: auto !important; }
   .fi-print {display: none;} 
