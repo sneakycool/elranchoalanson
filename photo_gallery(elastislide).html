@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Photo Gallery</title>
 
     
     <meta name="description" content="Northern Michigan's " />
@@ -13,12 +13,36 @@
     <meta name="copyright" content="El Rancho Alanson RV Resort Copyright (c) 2015" />
 
     
-    <script src="scripts/vendor/modernizr.js"></script>
-    
+  <script src="scripts/vendor/modernizr.js"></script>
   <link href="styles/foundation.css" rel="stylesheet" type="text/css">
   <link href="styles/extra.css" rel="stylesheet" type="text/css">
+  <link href="styles/RIG/elastislide.css" rel="stylesheet" type="text/css">
+  <link href="styles/RIG/style.css" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
-
+  <noscript>
+			<style>
+				.es-carousel ul{
+					display:block;
+				}
+			</style>
+  </noscript>
+  <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+				<div class="rg-caption" style="display:none;">
+						<p></p>
+			</div>
+		</div>
+	</div>
+</script>
   </head>
   
   <body>
@@ -108,119 +132,33 @@
   </nav>
 </div>
   <!-- End Top Bar -->
- 
+ <div class="wrap">
+ <br>
+ <div class="content">
   
- 
-    <!--Med/Lg Content Slider -->
- 
-      <div class="row full-orbit hidden-for-small">
-        <div class="large-12">
- 
-          <div id="featured" title="Click to Pause/Restart Slideshow" data-orbit>
-              <img src="images/100_3931(desktop).jpg">
-              <img src="images/100_3988(desktop).jpg">
-              <img src="images/100_3956(desktop).jpg">
-            </div>
- 
-      </div>
-    </div>
- 
-    <!-- End Med/Lg Content Slider -->
+  <div id="rg-gallery" class="rg-gallery">
+	<div class="rg-thumbs">
+		<!-- Elastislide Carousel Thumbnail Viewer -->
+		<div class="es-carousel-wrapper">
+			<div class="es-nav">
+				<span class="es-nav-prev">Previous</span>
+				<span class="es-nav-next">Next</span>
+			</div>
+			<div class="es-carousel">
+				<ul>
+					<li><a href="#"><img src="images/thumbs/100_3988.jpg" data-large="images/100_3988.jpg" alt="image01" data-description="Some description" /></a></li>
+					<li><a href="#"><img src="images/thumbs/100_0862(smcrop).jpg" data-large="images/100_0862(smcrop).jpg" alt="image01" data-description="Some description" /></a></li>
+					<li><a href="#"><img src="images/thumbs/100_3931(crop).jpg" data-large="images/100_3931(crop).jpg" alt="image01" data-description="Some description" /></a></li>
+					
+				</ul>
+			</div>
+		</div>
+		<!-- End Elastislide Carousel Thumbnail Viewer -->
+	</div><!-- rg-thumbs -->
+</div><!-- rg-gallery -->	
+</div>	
 	
-	<!-- Sm Content Slider -->
-	
-	<div class="row full-orbit show-for-small">
-        <div class="large-12">
- 
-          <div id="featured" data-orbit>
-              <img src="images/100_3931(crop).jpg">
-              <img src="images/100_3988(crop).jpg">
-              <img src="images/100_3956(crop).jpg">
-            </div>
- 
-      </div>
-    </div>
-	
-	<!-- End Sm Content Slider -->
- <div class="row">
-  <br>
-    <div class="large-12 columns">
- 
-      <!-- Second Band (Image Left with Text) -->
-     
-      <div class="row">
-        <div class="large-4 columns">
-          <img src="images/entrance.jpg" title="El Rancho Entrance">
-        </div>
-        <div class="large-8 columns">
-          <h4>Welcome to El Rancho Alanson</h4>
-          <div class="row">
-            <div class="large-6 columns">
-              <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-            </div>
-            <div class="large-6 columns">
-              <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-     
-     
-      <!-- Third Band (Image Right with Text) -->
-     
-      <div class="row">
-        <div class="large-8 columns">
-          <h4>Year-Round Luxury</h4>
-     
-          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-     
-          <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-     
-        </div>
-        <div class="large-4 columns">
-          <img src="images/100_0862(smcrop).jpg">
-        </div>
-      </div>
-      <hr/>
-	  </div>
-	  </div>
-      
- <!-- Contact Panel -->
- 
-<div class="row">
-  <div class="large-12 columns">
-  
-    
-      <div class="panel">
-        
-        <h4>Get in touch!<span class="large-4 columns"></span></h4>
-        
-        <div class="row">
-          
-          <div class="large-9 columns">
-            <p>Please feel free to contact us with any questions.</p>
-          </div>
-          
-          <div class="large-3 columns">
-            
-            <a class="radius button right" href="contact.html">Contact Us!</a>
-            
-           
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-	
-
-  
- <!-- End Contact Form -->
-  
-    <!-- End Content -->
- 
- 
-    <!-- Footer -->
+<!-- Footer -->
  
       <footer class="row">
         
@@ -244,9 +182,10 @@
             </div>
         </div>
       </footer>
-
     <!-- End Footer -->
- 	
+
+	</div><!-- End Wrap -->
+ 
  <script>
   document.write('<script src=scripts/vendor/' +
   ('__proto__' in {} ? 'zepto' : 'jquery') +
@@ -256,9 +195,11 @@
     <script src="scripts/vendor/jquery.js"></script>
 	<script src="scripts/foundation/foundation.js"></script>
     <script src="scripts/foundation/foundation.topbar.js"></script>
-    <script src="scripts/foundation/foundation.reveal.js"></script>
-    <script src="scripts/foundation/foundation.orbit.js"></script>
 	<script src="scripts/extras/sticky_footer.js"></script>
+	<script src="scripts/RIG/jquery.tmpl.min.js"></script>
+	<script src="scripts/RIG/jquery.easing.1.3.js"></script>
+	<script src="scripts/RIG/jquery.elastislide.js"></script>
+	<script src="scripts/RIG/gallery.js"></script>
 	<script>
       $(document).foundation();
 	  var doc = document.documentElement;
