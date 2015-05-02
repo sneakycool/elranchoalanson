@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+/*background: url(../bg.png) repeat; maybe*/
+}
+.top-bar {
+	background: linear-gradient(#0C6,#063);
+	background: -webkit-linear-gradient(#0C6,#063);
+
+}
+.contain-to-grid {
+	background:#063 !important;/*change to linear gradient?*/
+}
+.fixed {
+	box-shadow: 0 0 5px 1px #000;
+}
+.wrap {
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+	background: #FFF;
+	/*box-shadow: 0 0 5px 5px #888;*/
+	position: relative;
+	margin: 0 auto;
+	max-width: 65rem;
+}
+
+.top-bar.expanded .title-area {
+    background: #063 !important; 
+}
+
+.top-bar .name h1 a {
+	font-family: 'Alfa Slab One', cursive !important;
+	color: #F4F4F4 !important;
+	font-size: 1rem !important;
+	font-weight: normal !important;
+}
+
+.top-bar-section ul li{
+	background: #063 !important;
+	
+}
+
+.top-bar-section li a:not(.button):hover {
+    background: #0C6 !important;
+}
+
+.top-bar-section li a:not(.button) {
+	 background: linear-gradient(#0C6,#063) !important;
+	 background: -webkit-linear-gradient(#0C6,#063) !important;
+	 color: #F4F4F4 !important;
+
+
+}
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+	background:#063 !important;
+}
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button):hover {
+	background:#0C6 !important;
+}
+.dropdown li label {
+	background:#063 !important;
+	color: #F4F4F4 !important;
+}
+
+h4 { 
+	font-family: 'Alfa Slab One', cursive !important;
+}
+h5.title {
+	text-align: center;
+	}
+h6.panel {
+	font-size: .75rem !important;
+	}
+	
+.top_title {
+	font-family: 'Alfa Slab One', cursive;
+	color: #063;
+	text-align: center;
+	}
+	
+button, .button {
+	background:#063;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+	background-color: #0C6; 
+}
+	
+.row.full-orbit {
+	min-width: 100%;
+	height: auto;
+	padding: 0;
+}
+
+.google-map {
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+	overflow: hidden;
+}
+.google-map iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+.rent th{
+text-align: center;
+}
+@media print{
+  html, body{ background-color:#FFFFFF; background-image:none; color:#000000; height: auto !important; }
+  .fi-print {display: none;} 
+}
+/*footer {
+background: linear-gradient(#063,#0C6);
+color: #F4F4F4;
+font-family: 'Alfa Slab One', cursive !important;
+min-width: 100%;
+max-width: none; 
+margin: 0;
+padding: 0; }*/
+	
