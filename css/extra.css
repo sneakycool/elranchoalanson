@@ -13,17 +13,23 @@ background-color: #131313;
 background-size: 20px 20px;
 /*background: url(../bg.png) repeat; maybe*/
 }
-.top-bar {
-	background: linear-gradient(#0C6,#063);
-	background: -webkit-linear-gradient(#0C6,#063);
 
-}
 .contain-to-grid {
 	background:#063 !important;/*change to linear gradient?*/
 }
 .fixed {
 	box-shadow: 0 0 5px 1px #000;
 }
+
+a.fancybox img {
+        border: none;
+        box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+        -o-transform: scale(1,1); -ms-transform: scale(1,1); -moz-transform: scale(1,1); -webkit-transform: scale(1,1); transform: scale(1,1); -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;
+    } 
+    a.fancybox:hover img {
+        position: relative; z-index: 999; -o-transform: scale(1.03,1.03); -ms-transform: scale(1.03,1.03); -moz-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03); transform: scale(1.03,1.03);
+    }
+	
 .wrap {
 	padding-left: 0.9375rem;
 	padding-right: 0.9375rem;
@@ -33,7 +39,11 @@ background-size: 20px 20px;
 	margin: 0 auto;
 	max-width: 65rem;
 }
+.top-bar {
+	background: linear-gradient(#0C6,#063);
+	background: -webkit-linear-gradient(#0C6,#063);
 
+}
 .top-bar.expanded .title-area {
     background: #063 !important; 
 }
