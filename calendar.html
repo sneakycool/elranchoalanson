@@ -2,21 +2,24 @@
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Calendar</title>
 
-    <meta name="description" content="Northern Michigan's " />
-    <meta name="author" content="El Rancho Alanson RV Resort" />
-    <meta name="copyright" content="El Rancho Alanson RV Resort Copyright (c) 2015" />
-
-    <script src="scripts/vendor/modernizr.js"></script>
+    <!--SEO-->
+    <meta name="description" content="Northern Michigan's Camper's Country Club" />
+    <meta name="author" content="Adam Henning" />
+    <meta name="copyright" content="El Rancho Alanson RV Resort" />
+    	
+	<!--Scripts-->
+	<script src="scripts/vendor/modernizr.js"></script>
     
-  <link href="styles/foundation.css" rel="stylesheet" type="text/css">
-  <link href="styles/foundation.calendar.css" rel="stylesheet" type="text/css">
-  <link href="styles/extra.css" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+	<!--CSS-->
+	<link href="css/foundation.css" rel="stylesheet" type="text/css">
+	<link href="css/extra.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
 
   </head>
   
@@ -43,48 +46,47 @@
       <ul class="right">
         <li class="divider"></li>
         <li class="has-dropdown">
-          <a href="#">Main Item 1</a>
+          <a href="">Resort Information</a>
           <ul class="dropdown">
-            <li><label>Section Name</label></li>
-            <li class="has-dropdown">
-              <a href="#" class="">Has Dropdown, Level 1</a>
+		  <li><label>Amenities and Rentals</label></li>
+		  <li><a href="amenities.html">Resort Amenities</a></li>
+			<li class="has-dropdown">
+              <a href="" class="">Rentals</a>
               <ul class="dropdown">
-                <li><a href="#">Dropdown Options</a></li>
-                <li><a href="#">Dropdown Options</a></li>
-                <li><a href="#">Level 2</a></li>
-                <li><a href="#">Subdropdown Option</a></li>
-                <li><a href="#">Subdropdown Option</a></li>
-                <li><a href="#">Subdropdown Option</a></li>
+                <li><a href="vacant_sites.html">Vacant Sites</a></li>
+				<li><a href="rental_units.html">Sites with Units</a></li>
               </ul>
             </li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li><a href="#">Dropdown Option</a></li>
             <li class="divider"></li>
-            <li><label>Section Name</label></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li class="divider"></li>
-            <li><a href="#">See all &rarr;</a></li>
-          </ul>
+			<li><label>Maps</label></li>
+            <li><a href="location.html">Our Location</a></li>
+			<li><a href="resort_map.html">Resort Map</a></li>
+			<li class="divider"></li>
+			</ul>
         </li>
         <li class="divider"></li>
+		
 		<li class="has-dropdown">
 		<a href="">Things to do</a>
 			<ul class="dropdown">
-        <li><a href="calendar.html">Event Calendar</a></li>
-		<li><a href="#">Local Attractions</a></li>
-		<li><a href="#">Local Restaurants</a></li>
+            <li><label>Events</label></li>
+            <li><a href="calendar.html">Calendar</a></li>
+				</li>
+				<li class="divider"></li>
+				<li><label>Area Interests</label></li>
+		<li><a href="attractions.html">Local Attractions</a></li>
+		<li><a href="dining.html">Dining</a></li>
+		<li class="divider"></li>
 		</ul>
-        <li class="divider"></li>
-		
-        <li class="has-dropdown">
-          <a href="">About Us</a>
-          <ul class="dropdown">
-            <li><a href="park_map.html">Park Map</a></li>
-			<li><a href="location.html">Our Location</a></li>
+        
+		<li class="divider"></li>
+		<li class="has-dropdown">
+        <a href="">About Us</a>
+        <ul class="dropdown">
+            <li><a href="photo_gallery.html">Photo Gallery</a></li>
+            <li><a href="history.html">Our History</a></li>
             <li><a href="weather.html">Current Weather</a></li>
-            <li><a href="#" data-reveal-id="contact_form">Contact Us</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
             <li class="divider"></li>
           </ul>
         </li>
@@ -94,320 +96,77 @@
 </div>
   <!-- End Top Bar -->
 	
-	<!-- Calendar -->
- <div class="row">
-	<div class="large-12 columns"><br><br>
-		<ul class="calendar">
-    <li class="title"><br>February</li><br>
-    <li class="day-header">
-        <div class="small-1 medium-1 large-1 day">
-            <span class="show-for-medium-up">Sunday</span>
-            <span class="show-for-small">Sun</span>
-        </div>
-        <div class="small-1 medium-1 large-1 day">
-            <span class="show-for-medium-up">Monday</span>
-            <span class="show-for-small">Mon</span>
-        </div>
-        <div class="small-1 medium-1 large-1 day">
-            <span class="show-for-medium-up">Tuesday</span>
-            <span class="show-for-small">Tue</span>
-        </div>
-        <div class="small-1 medium-1 large-1 day">
-            <span class="show-for-large-up">Wednesday</span>
-            <span class="show-for-medium-down">Wed</span>
-        </div>
-        <div class="small-1 medium-1 large-1 day">
-            <span class="show-for-medium-up">Thursday</span>
-            <span class="show-for-small">Thu</span>
-        </div>
-        <div class="small-1 medium-1 large-1 day">
-            <span class="show-for-medium-up">Friday</span>
-            <span class="show-for-small">Fri</span>
-        </div>
-        <div class="small-1 medium-1 large-1 day">
-            <span class="show-for-medium-up">Saturday</span>
-            <span class="show-for-small">Sat</span>
-        </div>
-    </li>
-    <li class="week"><br>
-        <div class="small-1 medium-1 large-1 day">1</div>
-        <div class="small-1 medium-1 large-1 day">2<img src="calendar/groundhog.jpg" title="Groundhog Day"></div>
-        <div class="small-1 medium-1 large-1 day">3</div>
-        <div class="small-1 medium-1 large-1 day">4</div>
-        <div class="small-1 medium-1 large-1 day">5</div>
-        <div class="small-1 medium-1 large-1 day">6</div>
-        <div class="small-1 medium-1 large-1 day">7</div>
-    </li>
-    <li class="week">
-        <div class="small-1 medium-1 large-1 day">8</div>
-        <div class="small-1 medium-1 large-1 day">9</div>
-        <div class="small-1 medium-1 large-1 day">10</div>
-        <div class="small-1 medium-1 large-1 day">11</div>
-        <div class="small-1 medium-1 large-1 day">12</div>
-        <div class="small-1 medium-1 large-1 day">13</div>
-        <div class="small-1 medium-1 large-1 day">14</div>
-    </li>
-    <li class="week">
-        <div class="small-1 medium-1 large-1 day">15</div>
-        <div class="small-1 medium-1 large-1 day">16</div>
-        <div class="small-1 medium-1 large-1 day">17</div>
-        <div class="small-1 medium-1 large-1 day">18</div>
-        <div class="small-1 medium-1 large-1 day">19</div>
-        <div class="small-1 medium-1 large-1 day">20</div>
-        <div class="small-1 medium-1 large-1 day">21</div>
-    </li>
-    <li class="week">
-        <div class="small-1 medium-1 large-1 day">22</div>
-        <div class="small-1 medium-1 large-1 day">23</div>
-        <div class="small-1 medium-1 large-1 day">24</div>
-        <div class="small-1 medium-1 large-1 day">25</div>
-        <div class="small-1 medium-1 large-1 day">26</div>
-        <div class="small-1 medium-1 large-1 day">27<a href="#" data-reveal-id="fish_form" title="Click to Sign Up!"><br><br>Fish Fry</a></div>
-        <div class="small-1 medium-1 large-1 day">28</div>
-    </li>
-    <!--<li class="week">
-        <div class="small-1 medium-1 large-1 day next-month">1</div>
-		<div class="small-1 medium-1 large-1 day next-month">2</div>
-		<div class="small-1 medium-1 large-1 day next-month">3</div>
-		<div class="small-1 medium-1 large-1 day next-month">4</div>
-		<div class="small-1 medium-1 large-1 day next-month">5</div>
-		<div class="small-1 medium-1 large-1 day next-month">6</div>
-		<div class="small-1 medium-1 large-1 day next-month">7</div>
-    </li>-->
-</ul>
-	</div>
- </div>
- <br>
-	<!-- End Calendar -->
+	<div class="wrap">
+	<br>
 	
-<!-- End Content -->
-
-	<!-- Event Sign-Up -->
+	<div class="large-12 columns">
+			<h3 class="top_title">Calendar</h3>
+            <hr></div>
+		
+		<!-- Calendar -->
+		
+		<div class="row">
+		<div class="large-12 columns">
+			<div class="google-calendar">
+				<iframe src="https://calendar.google.com/calendar/embed?src=8mvaascfa6gfifem06dq000ooc%40group.calendar.google.com&showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=8mvaascfa6gfifem06dq000ooc%40group.calendar.google.com&amp;color=%23691426&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+			</div>
+		</div>
+		</div>
+		
+		<!-- End Calendar -->
 	
-	<div class="reveal-modal small" id="fish_form" data-reveal>
-	 
-	 <div class="section-container tabs" data-section>
-          
-          <section class="section">
-          		
-                <h5 class="title">Sign Up for the Fish Fry on February 27th!</h5>
-          
-          <div class="content">
-            
-            <form name="contact_form" action="http://formspree.io/aglhenning@live.com" method="post">
-              
-              <div class="row collapse">
-                
-                <div class="large-2 columns">
-                
-                  <label class="inline">Name</label>
-                  
-                </div>
-                
-                <div class="large-10 columns">
-                
-                  <input type="text" id="Name" name="Name" title="Please enter your name." placeholder="Your Name" required pattern="[a-zA-Z|\s|\.|-]+">
-                  
-                             
-                </div>
-              </div>
-               <div class="row collapse">
-                
-                <div class="large-2 columns">
-                
-                  <label class="inline">Lot Number</label>
-                </div>
-                
-                <div class="large-10 columns">
-                
-                  <input type="number" id="Lot" name="Lot" title="Please enter your lot number." placeholder="Lot" min="1" max="137" required>
-                                    
-                </div>
-              </div>
-              <div class="row collapse">
-                
-                <div class="large-2 columns">
-                
-                  <label class="inline">Phone</label>
-                </div>
-                
-                <div class="large-10 columns">
-                
-                  <input type="text" id="Phone" name="Phone" title="Please enter your phone number." placeholder="(555) 555-5555" required pattern="[(]?([2-9]{1}\d{2})[-|)|\s]?[-|\s]?([2-9]{1}\d{2})[-|\s]?(\d{4})$">
-                                    
-                </div>
-              </div>
-              
-              <div class="row collapse">
-                
-                <div class="large-2 columns">
-                
-                  <label class="inline">Email</label>
-                  
-                </div>
-                
-                <div class="large-10 columns">
-                
-                  <input type="email" name="Email" placeholder="you@email.com" title="Please enter your email address." required pattern="^(\w[-._\w]*\w@\w[-._\w]*\w\.\w{2,3})+$">
-                  
-                                    
-                </div>
-              </div>
-			  <label class="center">You may pick up your tickets at the office during regular business hours.<br> Tickets are $10 each.</label>
-              <button type="submit" class="radius button left">Submit</button> 
-              
-			  <button type="reset" class="radius button right">Reset</button>
-              
-              <input type="hidden" name="_subject" value="Friday Fish Fry">
-              
-              <input type="text" name="_gotcha" style="display:none">
-              
-             <input type="hidden" name="_next" value="//sneakycool.github.io/elranchoalanson/thank_you.html">
-            
-            </form>
-           
-             </div>
-        </section>
-     </div>
-            <a class="close-reveal-modal">&#215;</a>
-            </div>
-	<!-- End Event Sign-Up -->
 	
-	<!-- Contact Form -->
-	
-	            <div class="reveal-modal small" id="contact_form" data-reveal>
-          
-          <div class="section-container tabs" data-section>
-          
-          <section class="section">
-          		
-                <h5 class="title">Drop us a line!</h5>
-          
-          <div class="content">
-            
-            <form name="contact_form" action="http://formspree.io/aglhenning@live.com" method="post">
-              
-              <div class="row collapse">
-                
-                <div class="large-2 columns">
-                
-                  <label class="inline">Name</label>
-                  
-                </div>
-                
-                <div class="large-10 columns">
-                
-                  <input type="text" id="Name" name="Name" title="Please enter your name." placeholder="Your Name" required pattern="[a-zA-Z|\s|\.|-]+">
-                  
-                             
-                </div>
-              </div>
-              
-              <div class="row collapse">
-                
-                <div class="large-2 columns">
-                
-                  <label class="inline">Phone</label>
-                </div>
-                
-                <div class="large-10 columns">
-                
-                  <input type="text" id="Phone" name="Phone" title="Please enter your phone number." placeholder="(555) 555-5555" required pattern="[(]?([2-9]{1}\d{2})[-|)|\s]?[-|\s]?([2-9]{1}\d{2})[-|\s]?(\d{4})$">
-                                    
-                </div>
-              </div>
-              
-              <div class="row collapse">
-                
-                <div class="large-2 columns">
-                
-                  <label class="inline">Email</label>
-                  
-                </div>
-                
-                <div class="large-10 columns">
-                
-                  <input type="email" id="Email"  name="Email" placeholder="you@email.com" title="Please enter your email address." required pattern="^(\w[-._\w]*\w@\w[-._\w]*\w\.\w{2,3})+$">
-                  
-                                    
-                </div>
-              </div>
-             
-			 <label>How should we contact you? </label><label><input type="radio" value="Phone" name="Contact Preference" title="Please choose one." required> Phone </label><label><input type="radio" value="Email" name="Contact Preference" title="Please choose one." required> Email </label>
-                            
-              <label>How may we help?</label><br>
-              
-              <textarea id="Message" name="Message" rows="4" required></textarea><br>
-              
-              <button type="submit" class="radius button left">Submit</button> 
-              
-			  <button type="reset" class="radius button right">Reset</button>
-              
-              <input type="hidden" name="_subject" value="New Form Submission">
-              
-              <input type="text" name="_gotcha" style="display:none">
-              
-             <input type="hidden" name="_next" value="//sneakycool.github.io/elranchoalanson/thank_you.html">
-            
-            </form>
-           
-             </div>
-        </section>
-     </div>
-            <a class="close-reveal-modal">&#215;</a>
-            </div>
-<!-- End Contact Form -->
-	
-    <!-- Footer -->
+   
+   <!-- Footer -->
  
       <footer class="row">
         
-        <div class="large-12 columns">
+        <div class="large-12 columns text-center">
             
             <div class="row">
 			<hr>
-             <div class="large-6 columns">
-                  <p>&copy; 2015 El Rancho Alanson RV Resort. All Rights Reserved.</p>
+             <div class="large-12 columns">
+                  <p>&copy; 2016 El Rancho Alanson RV Resort &nbsp | &nbsp 6732 M-68 Alanson, MI 49706 &nbsp | &nbsp 231.548.2600</a></p>
               </div>
- 
-              <div class="large-6 small-12 columns">
-                  <ul class="inline-list right">
+			  
+              <div class="large-12 small-12 columns hidden-for-small">
+                  <ul class="inline-list center">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
+                    <li><a href="amenities.html">Amenities</a></li>
+					<li><a href="location.html">Location</a></li>
+					<li><a href="resort_map.html">Resort Map</a></li>
+					<li><a href="vacant_sites.html">Vacant Sites</a></li>
+                    <li><a href="rental_units.html">Rental Units</a></li>
+					<li><a href="may.html">Calendar</a></li>
+					<li><a href="photo_gallery.html">Photo Gallery</a></li>
+					<li><a href="weather.html">Current Weather</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                   </ul>
               </div>
  
             </div>
         </div>
       </footer>
- 
-    <!-- End Footer -->
+	</div>
+   <!-- End Footer -->
  	
- <script>
-  document.write('<script src=scripts/vendor/' +
-  ('__proto__' in {} ? 'zepto' : 'jquery') +
-  '.js><\/script>')
- </script>
+	<script>
+	document.write('<script src=scripts/vendor/' +
+	('__proto__' in {} ? 'zepto' : 'jquery') +
+	'.js><\/script>')
+	</script>
  
     <script src="scripts/vendor/jquery.js"></script>
 	<script src="scripts/foundation/foundation.js"></script>
     <script src="scripts/foundation/foundation.topbar.js"></script>
-    <script src="scripts/foundation/foundation.reveal.js"></script>
     <script src="scripts/foundation/foundation.orbit.js"></script>
+	<script src="scripts/extras/sticky_footer.js"></script>
+	
 	<script>
       $(document).foundation();
 	  var doc = document.documentElement;
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
     
-<script src="scripts/extras/jquery.maskedinput.min.js" type="text/javascript"></script>
-
-<script>jQuery(function($){
-   $("#Phone").mask("(999) 999-9999");
-});</script>
-
-
-</body>
+  </body>
 </html>
